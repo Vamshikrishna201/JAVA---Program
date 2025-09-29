@@ -36,5 +36,20 @@ public class Program_2 {
         else
             System.out.println("Marks: " + marks + "\nF Grade \nBeta tumse na ho paayega...");
 
+        //4Q Check if a number divisible by 3 or 5
+        System.out.println("===== --Check if a number divisible by 3 or 5-- =====");
+        System.out.print("Enter a Number: ");
+        int num = sc.nextInt();
+        if(num % 3 == 0 || num % 5 == 0){
+            System.out.println(num+" is devisible by both 3 and 5.");
+        }
+        else{
+            System.out.println(num+" is not devisible by both 3 and 5.");
+        }
+
+
+
+
+
     }
 }
