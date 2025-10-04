@@ -17,6 +17,13 @@ public class Pr_6 {
         // 135 / 10 = 13
         // 13 / 10 = 1
         // 1 / 10 = 0
+        //We use a while loop because:
+        //We don’t know how many digits the number has.
+        //The loop should keep running until the number becomes 0.
+        //Each time we divide by 10, the number gets smaller,
+        // and finally it reaches 0 → then the loop stops.
+        //So, while is the best choice because it says:
+        //-> “Do this again and again, as long as the number is not 0.”
         int count = 0;
         //using for loop
         if(n==0) count++;
@@ -32,7 +39,7 @@ public class Pr_6 {
         // using while loop
         while(n!=0)
         {
-            n/=10;
+            n = n / 10;
             count++;
         }
         System.out.println(m+" number of count is "+ count);
